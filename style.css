@@ -1,0 +1,223 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  background: #000;
+  color: #fff;
+}
+
+.home {
+  height: 100vh;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/42df4e1f-bef6-499e-87ff-c990584de314/5e7c383c-1f88-4983-b4da-06e14c0984ba/IN-en-20230904-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  opacity: 0.8;
+  padding: 20px 10%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.netflix-logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.home-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-content h1 {
+  font-style: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  max-width: 650px;
+}
+
+.home-content h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  /* background: #fff; */
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.email-form input {
+  flex: 1;
+  border: 2px solid rgba(225, 221, 221, 0.4);
+  outline: 0px;
+  padding: 12.3px;
+  font-size: 18px;
+  margin-left: 20px;
+  color: white;
+  background: transparent;
+  margin-right: 10px;
+}
+
+.email-form button {
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+
+.features .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px;
+  border-top: 10px solid rgba(170, 170, 170, 0.4);
+}
+
+.content-col {
+  width: 42%;
+}
+
+.content-col h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.content-col p {
+  font-size: 18px;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+.img-col {
+  width: 40%;
+}
+
+.accordion-section {
+  text-align: center;
+  margin: 60px auto;
+  width: 100%;
+  max-width: 740px;
+}
+
+.hr {
+  border-top: 10px solid rgba(170, 170, 170, 0.4);
+}
+
+.accordion-list ul li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion-list ul li {
+  list-style: none;
+}
+
+.accordion-list ul li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  background: #303030;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  font-size: 35px;
+  position: absolute;
+  right: 20px;
+  transition: transform 1s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-conteent {
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 2px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s, padding 1s;
+}
+
+input[type="checkbox"]:checked + label + .accordion-conteent {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+.footer-subscription {
+  /* width: 40%; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  padding: 20px 50px;
+}
+
+footer div {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 230px;
+  margin-top: 20px;
+}
+footer div ul li {
+  list-style: none;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+footer button {
+  background: transparent;
+  border: 1px solid white;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
